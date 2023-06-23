@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 300px;
+  height: 150px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #36393f;
+  color: #ffffff;
+}
+
+p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.colorGrid {
+  margin: 2px;
+}
+
+.display {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 40px;
+  margin-bottom: 20px;
+  background-color: #40444b;
+  color: #ffffff;
+  border: none;
+  resize: none;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  background-color: #7289da; /* Discord's primary color */
+  color: #ffffff; /* Discord's button text color */
+  border: none;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #677bc4; /* Discord's hover color */
+}
+
+.color {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+}
+
+.hidden {
+  display: none;
+}

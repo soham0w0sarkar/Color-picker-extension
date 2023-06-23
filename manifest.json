@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Get Color",
+  "version": "0.0.1",
+  "description": "Chrome extension to pick colors from the screen and get the hex code for it.",
+
+  "background": {
+    "service_worker": "./src/js/background.js"
+  },
+
+  "icons": {
+    "16": "./src/img/panda.png",
+    "48": "./src/img/panda.png",
+    "128": "./src/img/panda.png"
+  },
+
+  "permissions": ["activeTab", "scripting"],
+
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "./src/img/panda.png"
+  }
+}
