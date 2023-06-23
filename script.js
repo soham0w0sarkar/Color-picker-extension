@@ -1,6 +1,7 @@
 const button = document.querySelector(".button");
 const display = document.querySelector(".display");
 const heading = document.querySelector("p");
+const popup = document.querySelector(".popup");
 let colorCount = 0;
 
 const grid = `<span class="colorGrid">
@@ -43,6 +44,11 @@ button.addEventListener("click", async () => {
 
           try {
             await navigator.clipboard.writeText(color);
+
+            popup.classList.add("show-popup");
+            setTimeout(() => {
+              popup.classList.remove("show-popup");
+            }, 1000);
           } catch (error) {
             console.error(error);
           }
