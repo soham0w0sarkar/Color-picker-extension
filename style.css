@@ -81,7 +81,7 @@ p {
   height: 40px;
   border: none;
   border-radius: 10px;
-  box-shadow: #ffffff50 0px 1px 4px;
+  box-shadow: #00000050 0px 1px 4px;
   z-index: 10;
   position: fixed;
   bottom: -1px;
